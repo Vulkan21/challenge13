@@ -1,0 +1,15 @@
+name: Blank Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  blank:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Run blank step
+      run: echo "This is a blank workflow"
