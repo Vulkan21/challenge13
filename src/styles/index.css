@@ -1,0 +1,53 @@
+/* Global imports */
+@import 'variables.css';
+
+/* Block imports */
+@import 'blocks/page.css';
+@import 'blocks/header.css';
+@import 'blocks/footer.css';
+
+/* Custom hero section */
+.hero.is-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero .title {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero .subtitle {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+/* Card enhancements */
+.card {
+    border-radius: 8px;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Content sections */
+.section {
+    padding: 3rem 1.5rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .hero .title {
+        font-size: 2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-menu {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+    }
+}

@@ -1,0 +1,31 @@
+/* Footer styles */
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin-top: auto;
+}
+
+.footer .title {
+    color: white;
+}
+
+.footer .subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-links {
+    margin: 1.5rem 0;
+}
+
+.social-links .button {
+    margin: 0 0.5rem;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links .button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    transform: translateY(-2px);
+}

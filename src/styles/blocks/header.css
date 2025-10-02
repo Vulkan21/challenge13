@@ -1,0 +1,29 @@
+/* Header styles */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.site-title:hover {
+    transform: scale(1.05);
+}
+
+.navbar-item {
+    transition: var(--transition);
+}
+
+.navbar-item:hover {
+    background-color: rgba(50, 115, 220, 0.1);
+    color: var(--primary-color);
+}

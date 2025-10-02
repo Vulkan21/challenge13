@@ -1,0 +1,29 @@
+{
+  "name": "site222",
+  "version": "1.0.0",
+  "description": "Static site with MkDocs and GitHub Actions deployment",
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*,scripts/**/*",
+    "test": "editorconfig-checker",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
+    "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
+    "scripts": "mkdir -p dist/scripts && cp src/scripts/*.js dist/scripts/",
+    "build": "npm run html && npm run styles && npm run scripts",
+    "serve": "serve dist"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "editorconfig-checker": "^3.1.0",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1"
+  },
+  "dependencies": {
+    "serve": "^13.0.2"
+  },
+  "keywords": ["static-site", "mkdocs", "github-actions", "github-pages"],
+  "author": "Site222 Author",
+  "license": "MIT"
+}

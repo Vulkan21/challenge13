@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Site222 Author">
+    <meta name="description" content="Статический сайт, созданный с помощью MkDocs и GitHub Actions">
+    <meta name="keywords" content="статический сайт, MkDocs, GitHub Pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site222 - Главная страница</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    </style>
+</head>
+
+<body class="page__body">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#home">
+                    <strong class="site-title">Site222</strong>
+                </a>
+            </div>
+            
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#home">Главная</a>
+                    <a class="navbar-item" href="#about">О проекте</a>
+                    <a class="navbar-item" href="#features">Возможности</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="home" class="hero is-primary is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1 has-text-weight-bold">
+                        Добро пожаловать на Site222
+                    </h1>
+                    <p class="subtitle is-4">
+                        Современный статический сайт с автоматическим деплоем
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                        <h2 class="title is-2">О проекте</h2>
+                        <div class="content is-large">
+                            <p>
+                                Этот проект демонстрирует создание современного статического сайта 
+                                с использованием HTML, CSS, JavaScript и автоматического деплоя 
+                                через GitHub Actions на GitHub Pages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section has-background-light">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered">Возможности</h2>
+                <div class="columns">
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">HTML Валидация</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Автоматическая валидация HTML для обеспечения корректности разметки.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">PostCSS</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Современная обработка CSS с автоматической минификацией и оптимизацией.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">GitHub Pages</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Автоматический деплой на GitHub Pages через GitHub Actions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                        <h3 class="title is-4">Site222</h3>
+                        <p class="subtitle is-6">
+                            Статический сайт, созданный с ❤️ используя HTML, CSS, JS и GitHub Actions
+                        </p>
+                        <div class="social-links">
+                            <a href="https://github.com" class="button is-primary is-outlined">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                        <hr>
+                        <p class="has-text-grey-light">
+                            © 2025 Site222. Все права защищены.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
