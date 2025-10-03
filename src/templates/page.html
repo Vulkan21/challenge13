@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Site222 Author">
+    <meta name="description" content="Статический сайт, созданный с помощью Markdown и GitHub Actions">
+    <meta name="keywords" content="статический сайт, Markdown, HTML, CSS, JavaScript, GitHub Pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{TITLE}} - Site222</title>
+
+    <link rel="stylesheet" href="styles/bulma.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    </style>
+</head>
+
+<body class="page__body">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong class="site-title">Site222</strong>
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Главная</a>
+                    <a class="navbar-item" href="about.html">О проекте</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                        <div class="content">
+                            {{CONTENT}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                        <h3 class="title is-4">Site222</h3>
+                        <p class="subtitle is-6">
+                            Статический сайт, созданный с ❤️ используя Markdown, HTML, CSS, JS и GitHub Actions
+                        </p>
+                        <div class="social-links">
+                            <a href="https://github.com/Vulkan21/challenge13" class="button is-primary is-outlined">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                        <hr>
+                        <p class="has-text-grey-light">
+                            © 2025 Site222. Все права защищены.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

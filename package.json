@@ -4,18 +4,21 @@
   "description": "Static site with MkDocs and GitHub Actions deployment",
   "private": true,
   "scripts": {
-    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*,scripts/**/*",
+    "start": "browser-sync start --server dist --no-notify --no-ui --cwd dist --files **/*",
     "test": "editorconfig-checker",
-    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
+    "markdown": "node build-markdown.js",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir dist --output-dir dist --file-ext html",
     "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
     "scripts": "mkdir -p dist/scripts && cp src/scripts/*.js dist/scripts/",
-    "build": "npm run html && npm run styles && npm run scripts",
+    "download-bulma": "mkdir -p dist/styles && curl -o dist/styles/bulma.min.css https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css",
+    "build": "npm run download-bulma && npm run markdown && npm run styles && npm run scripts && npm run html",
     "serve": "serve dist"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "editorconfig-checker": "^3.1.0",
     "html-minifier": "^4.0.0",
+    "marked": "^15.0.12",
     "postcss-cli": "^7.1.1",
     "postcss-csso": "^4.0.0",
     "postcss-import": "^12.0.1"
